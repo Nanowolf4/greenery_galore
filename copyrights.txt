@@ -1,0 +1,8 @@
+The Greenery Galore mod is distributed under the GNU version 3 license.
+Developers: Viper, Nanowolf4(n4w).
+
+Third-party resources and projects that were used:
+Flowerpot:
+https://github.com/minetest-mods/flowerpot
+Code by Auke Kok <sofar@foo-projects.org> LGPL-2.1+
+Model by Auke Kok <sofar@foo-projects.org> CC-BY-SA-3.0
