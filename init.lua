@@ -425,7 +425,7 @@ greenery_galore.register_colored_node = function(data)
 			description = data.desc.." ".."("..color..")",
 			drawtype = data.drawtype,
 			use_texture_alpha = data.alpha or "true",
-			sunlight_propagates = data.sunlight_propagates or "false",
+			sunlight_propagates = data.sunlight_propagates or false,
 			place_param2 = 0,
 			color = color,
 			paramtype = data.paramtype,
@@ -551,3 +551,5 @@ dofile(path .. "/plants.lua")
 dofile(path .. "/nodes.lua")
 dofile(path .. "/tools.lua")
 dofile(path .. "/waterplants.lua")
+
+minetest.log("action", "Greenery Galore loaded")
