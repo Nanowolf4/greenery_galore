@@ -29,7 +29,7 @@ greenery_galore.register_colored_node({
 greenery_galore.register_normal_node({
 	name = "moss_tree1",
 	desc = "Moss tree",
-	walkable = "true",
+	walkable = true,
 	sides = {"default_tree.png^greenery_galore_moss_tree1.png",
                 "default_tree.png^greenery_galore_moss_tree2.png",
                 "default_tree.png^greenery_galore_moss_tree3.png",
