@@ -53,7 +53,7 @@ greenery_galore.register_replacement({
 greenery_galore.register_nodebox_plant({
 	name = "leaf_litter",
 	desc = "Leaf litter",
-	bounds = {-0.5, -0.45, -0.5, 0.5, -0.48, 0.5},
+	bounds = {-0.5000, -0.7000, -0.5000, 0.5000, -0.7000, 0.5000},
 	persist = .7,
 	scale = 0.7,
 	density = .3,
@@ -69,7 +69,7 @@ greenery_galore.register_nodebox_plant({
 greenery_galore.register_nodebox_plant({
 	name = "leaf_litter2",
 	desc = "Leaf litter",
-	bounds = {-0.5, -0.45, -0.5, 0.5, -0.48, 0.5},
+	bounds = {-0.5000, -0.7000, -0.5000, 0.5000, -0.7000, 0.5000},
 	persist = .7,
 	scale = 0.7,
 	density = .3,
@@ -85,7 +85,7 @@ greenery_galore.register_nodebox_plant({
 greenery_galore.register_nodebox_plant({
 	name = "leaf_litter3",
 	desc = "Leaf litter",
-	bounds = {-0.5, -0.45, -0.5, 0.5, -0.48, 0.5},
+	bounds = {-0.5000, -0.7000, -0.5000, 0.5000, -0.7000, 0.5000},
 	persist = .7,
 	scale = 0.7,
 	density = .3,
