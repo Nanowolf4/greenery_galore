@@ -202,8 +202,8 @@ greenery_galore.register_mesh_plant({
 })
 
 greenery_galore.register_plantlike_plant({
-	name = "blue_cornflower_single",
-	desc = "Single Blue Cornflower",
+	name = "blue_cornflower",
+	desc = "Blue Cornflower",
 	color = "blue",
 	waving = 1,
 	bounds = {-.12, -.5, -.12, .12, 0.45, .12},
@@ -627,15 +627,6 @@ greenery_galore.register_plantlike_plant({
 	randomRotate = true,
 	waving = 1,
 	bounds = {-.3, -.5, -.3, .3, 0.75, .3}
-})
-
-greenery_galore.register_plantlike_plant({
-	name = "blue_cornflower",
-	desc = "Blue Cornflower",
-	color = "blue",
-	waving = 1,
-	persist = 1.0,
-	density = .025
 })
 
 greenery_galore.register_plantlike_plant({
