@@ -6,6 +6,8 @@ local nodes_to_replace = {}
 
 local group_spawn_nodes = {}
 
+greenery_galore.seed = 933402367
+
 greenery_galore.colors = {}
 
 local default_bounds = {-.3125, -.5, -.3125, .3125, .3125, .3125}
@@ -66,7 +68,7 @@ greenery_galore.register_plantlike_plant = function(data)
 				offset = -0.015,
 				scale = data.density or 0.025,
 				spread = {x = data.spread or 100, y = data.spread or 100, z = data.spread or 100},
-				seed = data.seed or "933402367",
+				seed = greenery_galore.seed,
 				octaves = 3,
 				persist = data.persist or .4
 			},
@@ -135,7 +137,7 @@ greenery_galore.register_plantlike_rooted_plant = function(data)
 			offset = -0.015,
 			scale = data.density or 0.025,
 			spread = {x = data.spread or 100, y = data.spread or 100, z = data.spread or 100},
-			seed = data.seed or math.random(1000),
+			seed = greenery_galore.seed,
 			octaves = 3,
 			persist = data.persist or .4
 		},
@@ -210,7 +212,7 @@ greenery_galore.register_nodebox_plant = function(data)
 			offset = -0.015,
 			scale = data.density or 0.025,
 			spread = {x = data.spread or 100, y = data.spread or 100, z = data.spread or 100},
-			seed = data.seed or math.random(1000),
+			seed = greenery_galore.seed,
 			octaves = 3,
 			persist = data.persist or .4
 		},
@@ -280,7 +282,7 @@ greenery_galore.register_mesh_plant = function(data)
 			offset = -0.015,
 			scale = data.density or 0.025,
 			spread = {x = data.spread or 100, y = data.spread or 100, z = data.spread or 100},
-			seed = data.seed or 933402367,
+			seed = greenery_galore.seed,
 			octaves = 3,
 			persist = data.persist or .4
 		},
@@ -525,7 +527,7 @@ greenery_galore.register_structures = function(data)
 			offset = -0.015,
 			scale = data.density or 0.025,
 			spread = {x = data.spread or 100, y = data.spread or 100, z = data.spread or 100},
-			seed = data.seed,
+			seed = greenery_galore.seed,
 			octaves = 3,
 			persist = data.persist or .4,
                         lacunarity = 4.0,
