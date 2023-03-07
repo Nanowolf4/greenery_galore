@@ -54,6 +54,7 @@ greenery_galore.register_plantlike_plant = function(data)
 					minetest.set_node(pointed_thing.above, {name = "greenery_galore:" .. data.name})
 			end
 		end,
+		use_texture_alpha = data.use_texture_alpha  or "clip",
 	})
 
 	if not data.noSpawn then
@@ -123,6 +124,7 @@ greenery_galore.register_plantlike_rooted_plant = function(data)
 		on_place =  function(itemstack, placer, pointed_thing)
 			minetest.set_node(pointed_thing.under, {name = "greenery_galore:" .. data.name, param2 = math.random(data.min_height or 16, data.max_height or 16)})
 		end,
+		use_texture_alpha = data.use_texture_alpha  or "clip",
 	})
 
 	minetest.register_decoration({
@@ -197,6 +199,7 @@ greenery_galore.register_nodebox_plant = function(data)
 					minetest.set_node(pointed_thing.above, {name = "greenery_galore:" .. data.name})
 			end
 		end,
+		use_texture_alpha = data.use_texture_alpha  or "clip",
 	})
 
 	minetest.register_decoration({
@@ -266,6 +269,7 @@ greenery_galore.register_mesh_plant = function(data)
 					minetest.set_node(pointed_thing.above, {name = "greenery_galore:" .. data.name})
 			end
 		end,
+		use_texture_alpha = data.use_texture_alpha  or "clip",
 	})
 
 	minetest.register_decoration({
@@ -427,6 +431,7 @@ greenery_galore.register_colored_node = function(data)
 			is_ground_content = false,
 			groups = data.groups or {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2, wood = 1},
 			sounds = data.sounds or default.node_sound_wood_defaults(),
+			use_texture_alpha = data.use_texture_alpha  or "clip",
 		})
 
 		local hasDye = ""
@@ -503,6 +508,7 @@ greenery_galore.register_normal_node = function(data)
 				puncher:set_hp(puncher:get_hp() - data.damageOnPunch)
 			end
 		end,
+		use_texture_alpha = data.use_texture_alpha  or "clip",
 	})
 end
 

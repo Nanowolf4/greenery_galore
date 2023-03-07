@@ -65,12 +65,12 @@ function flowerpot.register_node(nodename)
 		tiles = {
 			{name = "flowerpot.png"},
 			{name = get_tile(nodedef)},
-			{name = "doors_blank.png"},
+			{name = "greenery_galore_blank.png"},
 		}
 	else
 		tiles = {
 			{name = "flowerpot.png"},
-			{name = "doors_blank.png"},
+			{name = "greenery_galore_blank.png"},
 			{name = get_tile(nodedef)},
 		}
 	end
@@ -106,6 +106,7 @@ function flowerpot.register_node(nodename)
 				},
 			}
 		},
+		use_texture_alpha = "clip",
 	})
 end
 
@@ -118,8 +119,8 @@ minetest.register_node(":flowerpot:empty", {
 	wield_image = "flowerpot_item.png",
 	tiles = {
 		{name = "flowerpot.png"},
-		{name = "doors_blank.png"},
-		{name = "doors_blank.png"},
+		{name = "greenery_galore_blank.png"},
+		{name = "greenery_galore_blank.png"},
 	},
 	paramtype = "light",
 	sunlight_propagates = true,
@@ -134,6 +135,7 @@ minetest.register_node(":flowerpot:empty", {
 	sounds = default.node_sound_defaults(),
 	groups = {attached_node = 1, oddly_breakable_by_hand = 3, cracky = 1},
 	on_rightclick = flowerpot_on_rightclick,
+	use_texture_alpha = "clip",
 })
 
 -- craft
