@@ -551,5 +551,6 @@ dofile(path .. "/plants.lua")
 dofile(path .. "/nodes.lua")
 dofile(path .. "/tools.lua")
 dofile(path .. "/waterplants.lua")
+dofile(path .. "/butterfly.lua")
 
 minetest.log("action", "Greenery Galore loaded")
