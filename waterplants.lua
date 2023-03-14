@@ -1,29 +1,29 @@
--- Underwater
-greenery_galore.register_plantlike_rooted_plant({
-	name = "123test",
-	desc = "123test",
-	bounds = {-.3, -.5, -.3, .3, -0.20, .3},
-	biomes = {"taiga_ocean",
-               "snowy_grassland_ocean",
-               "grassland_ocean",
-               "coniferous_forest_ocean",
-               "deciduous_forest_ocean",
-               "sandstone_desert_ocean",
-               "cold_desert_ocean"},
-	spawn_on = {"default:sand"},
-	persist = 2.1,
-	scale = 1.2,
-	spawn_by = {"default:water_source"},
-	density = .60,
-	spread = 40,
-	place_offset_y = -1,
-	y_max = -5,
-	y_min = -10,
-	min_height = 48,
-	max_height = 96,
-	base = "default:sand",
-	base_image = "default_sand.png"
-})
+-- -- Underwater
+-- greenery_galore.register_plantlike_rooted_plant({
+-- 	name = "123test",
+-- 	desc = "123test",
+-- 	bounds = {-.3, -.5, -.3, .3, -0.20, .3},
+-- 	biomes = {"taiga_ocean",
+--                "snowy_grassland_ocean",
+--                "grassland_ocean",
+--                "coniferous_forest_ocean",
+--                "deciduous_forest_ocean",
+--                "sandstone_desert_ocean",
+--                "cold_desert_ocean"},
+-- 	spawn_on = {"default:sand"},
+-- 	persist = 2.1,
+-- 	scale = 1.2,
+-- 	spawn_by = {"default:water_source"},
+-- 	density = .60,
+-- 	spread = 40,
+-- 	place_offset_y = -1,
+-- 	y_max = -5,
+-- 	y_min = -10,
+-- 	min_height = 48,
+-- 	max_height = 96,
+-- 	base = "default:sand",
+-- 	base_image = "default_sand.png"
+-- })
 -- Plants on shore
 greenery_galore.register_plantlike_plant({
 	name = "myosotis_palustris",
